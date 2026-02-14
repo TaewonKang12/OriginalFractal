@@ -6,17 +6,17 @@ public void setup()
 }
 public void draw()
 {
-  background(5,500);
+  background(0);
   sig(100+x, 500+y, 700);
 }
 public void mouseDragged()
 {
-x=mouseX-450;
-y=mouseY-750;
+x=mouseX-500;
+y=mouseY-780;
 }
 public void sig(int x, int y, int len) 
 {
-    if (len<20) {
+    if (len<5) {
       fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
       noStroke();
       rect(x, y,len,len);
@@ -27,4 +27,5 @@ public void sig(int x, int y, int len)
       sig(x, y+len/3, len/3);
     }
 }
+
 
