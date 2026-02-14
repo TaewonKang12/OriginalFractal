@@ -12,7 +12,7 @@ public void draw()
 public void mouseDragged()
 {
 x=mouseX-450;
-y=mouseY-150;
+y=mouseY-750;
 }
 public void sig(int x, int y, int len) 
 {
@@ -21,9 +21,10 @@ public void sig(int x, int y, int len)
       noStroke();
       rect(x, y,len,len);
     } else {
-      sig(x, y, len/2);
-      sig(x+len/2, y, len/2);
-      sig(x+len/2, y+len/2, len/2);
-      sig(x, y+len/2, len/2);
+      sig(x, y, len/3);
+      sig(x+len/3, y, len/3);
+      sig(x+len/3, y+len/3, len/3);
+      sig(x, y+len/3, len/3);
     }
 }
+
