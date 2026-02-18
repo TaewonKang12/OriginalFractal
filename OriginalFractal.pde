@@ -7,7 +7,7 @@ public void setup()
 public void draw()
 {
   background(0);
-  sig(100+x, 500+y, 1000);
+  sig(100+x, 500+y, 10000);
 }
 public void mouseDragged()
 {
@@ -27,6 +27,7 @@ public void sig(int x, int y, int len)
       sig(x, y+len/3, len/3);
     }
 }
+
 
 
 
